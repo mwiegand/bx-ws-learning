@@ -29,7 +29,7 @@ stages:
     value: '5'
     type: text
   - name: CF_MEMORY
-    value: 512M
+    value: 128M
     type: text
   - name: DISCOVERY_SERVICE_NAME
     value: Discovery-bx-learning
