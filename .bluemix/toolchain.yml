@@ -20,7 +20,7 @@ toolchain:
       Commit a change to the Git repo to trigger a new build and deployment or run it manually using the Continuous Delivery tool below.
 services:
   sample-repo:
-    service_id: hostedgit
+    service_id: githubconsolidated
     parameters:
       repo_name: '{{toolchain.name}}'
       repo_url: 'https://github.com/mwiegand/bx-ws-learning'
