@@ -1,0 +1,15 @@
+# IntelliJ
+.idea
+*.iml
+
+# Eclipse
+*.project
+
+# Libraries
+node_modules
+
+# Logs
+logs
+
+# Environment
+.env

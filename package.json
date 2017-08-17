@@ -1,0 +1,23 @@
+{
+	"name": "HSBackendLearning",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"async": "^2.5.0",
+		"body-parser": "^1.17.2",
+		"cfenv": "1.0.x",
+		"cors": "^2.8.4",
+		"dotenv": "^4.0.0",
+		"express": "4.13.x",
+		"glob": "^7.1.2",
+		"request": "*",
+		"watson-developer-cloud": "^2.37.0"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	}
+}
