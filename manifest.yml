@@ -2,9 +2,6 @@ applications:
 - path: .
   memory: 128M
   instances: 1
-  domain: eu-gb.mybluemix.net
-  name: hs-mw-backend
-  host: hs-mw-backend
   disk_quota: 1024M
   services:
   - Discovery-bx-learning
