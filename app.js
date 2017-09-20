@@ -205,8 +205,6 @@ app.post('/api/query', cors(), function (req, res, next) {
     if (!params.hasOwnProperty('highlight')) {
         params.highlight = 'true';
     }
-    console.log('params----------------------------------------');
-    console.log(params);
     var url = "https://gateway.watsonplatform.net/discovery/api/v1/environments/" +
         discovery_conf.environment.environment_id + "/collections/" +
         discovery_conf.collection.collection_id + "/query";
