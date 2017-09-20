@@ -1,5 +1,7 @@
 # Bluemix Workshop Backend Discovery Service
 
+vor "create toolchain" Discovery Service erklären
+
 Node.js Backend Server, der beim ersten Deploy einen Discovery Service erstellt und konfiguriert
 
 - Github account für Repository
