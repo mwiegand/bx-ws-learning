@@ -24,13 +24,16 @@ if(process.env.VCAP_SERVICES) {
     process.env.DISCOVERY_USERNAME = vcapServices.discovery[0].credentials.username;
     process.env.DISCOVERY_PASSWORD = vcapServices.discovery[0].credentials.password;
 }
+if (!process.env.hasOwnProperty('DISCOVERY_VERSION')){
+    process.env.DISCOVERY_VERSION = '2017-08-01'
+}
 var discovery = new DiscoveryV1({
     // If unspecified here, the DISCOVERY_USERNAME and
     // DISCOVERY_PASSWORD env properties will be checked
     // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
     username: process.env.DISCOVERY_USERNAME,
     password: process.env.DISCOVERY_PASSWORD,
-    version_date: '2017-08-01'
+    version_date: process.env.DISCOVERY_VERSION
 });
 
 var seeder = require('./discovery-service-seeder');
@@ -195,7 +198,6 @@ app.post('/api/query', cors(), function (req, res, next) {
     } else {
         params = req.body.query;
     }
-    params.version = discovery.version_date;
     if (!params.hasOwnProperty('passages')) {
         params.passages = 'true';
     }
@@ -205,6 +207,11 @@ app.post('/api/query', cors(), function (req, res, next) {
     if (!params.hasOwnProperty('highlight')) {
         params.highlight = 'true';
     }
+    if (!params.hasOwnProperty('version')) {
+        params.version = process.env.DISCOVERY_VERSION;
+    }
+    console.log('params----------------------------------------');
+    console.log(params);
     var url = "https://gateway.watsonplatform.net/discovery/api/v1/environments/" +
         discovery_conf.environment.environment_id + "/collections/" +
         discovery_conf.collection.collection_id + "/query";
