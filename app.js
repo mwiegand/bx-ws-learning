@@ -23,9 +23,7 @@ if(process.env.VCAP_SERVICES) {
     vcapServices = JSON.parse(process.env.VCAP_SERVICES);
     process.env.DISCOVERY_USERNAME = vcapServices.discovery[0].credentials.username;
     process.env.DISCOVERY_PASSWORD = vcapServices.discovery[0].credentials.password;
-}
-if (!process.env.hasOwnProperty('DISCOVERY_VERSION')){
-    process.env.DISCOVERY_VERSION = '2017-08-01'
+    process.env.DISCOVERY_URL = vcapServices.discovery[0].credentials.url;
 }
 var discovery = new DiscoveryV1({
     // If unspecified here, the DISCOVERY_USERNAME and
@@ -33,119 +31,136 @@ var discovery = new DiscoveryV1({
     // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
     username: process.env.DISCOVERY_USERNAME,
     password: process.env.DISCOVERY_PASSWORD,
-    version_date: process.env.DISCOVERY_VERSION
+    version_date: DiscoveryV1.VERSION_DATE_2017_08_01
 });
+if(process.env.hasOwnProperty('DISCOVERY_URL')) {
+    if (process.env.DISCOVERY_URL) {
+        discovery.URL = process.env.DISCOVERY_URL;
+    }
+}
 
 var seeder = require('./discovery-service-seeder');
 
 var discovery_env_conf = fs.readFileSync('config.json', 'utf8');
 
+function assureEnvironment(callback) {
+    discovery.getEnvironments(null, function (err, data) {
+        if (!err) {
+            if (data.hasOwnProperty('environments')) {
+                var environments = data.environments;
+                var learn_docs_envFound = environments.filter(function (env) {
+                    return env.name === discovery_conf.environment.name;
+                });
+                if (!learn_docs_envFound.length) {
+                    console.log('environment learn_docs not found');
+                    discovery.createEnvironment(discovery_conf.environment,
+                        function (err, response) {
+                            if (err)
+                                console.log('error:', err);
+                            else {
+                                console.log('environment learn_docs created');
+                                // console.log(JSON.stringify(response, null, 2));
+                                discovery_conf.environment = response;
+                                callback();
+                            }
+                        });
+                } else {
+                    discovery_conf.environment = learn_docs_envFound[0];
+                    // console.log('discovery_conf');
+                    // console.log(JSON.stringify(discovery_conf, null, 2));
+                    callback();
+                }
+            } else console.log('error:', 'discovery.getEnvironments returned no environments');
+        } else console.log('error:', err);
+    });
+}
+
+function assureConfiguration(callback) {
+    discovery.getConfigurations({environment_id: discovery_conf.environment.environment_id}, function (err, data) {
+        if (!err) {
+            if (data.hasOwnProperty('configurations')) {
+                var configurations = data.configurations;
+                var learn_docs_confFound = configurations.filter(function (env) {
+                    return env.name === discovery_conf.configuration.name;
+                });
+                if (!learn_docs_confFound.length) {
+                    console.log('configuration learn_docs_conf not found');
+                    discovery.createConfiguration({
+                            environment_id: discovery_conf.environment.environment_id,
+                            file: discovery_env_conf
+                        },
+                        function (err, response) {
+                            if (err)
+                                console.log('error:', err);
+                            else {
+                                console.log('configuration learn_docs_conf created');
+                                discovery_conf.configuration = response;
+                                // console.log(JSON.stringify(response, null, 2));
+                                callback();
+                            }
+                        });
+                } else {
+                    discovery_conf.configuration = learn_docs_confFound[0];
+                    callback();
+                }
+            } else console.log('error:', 'discovery.getConfigurations returned no configurations');
+        } else console.log('error:', err);
+    });
+}
+
+function assureCollection(callback) {
+    discovery.getCollections({environment_id: discovery_conf.environment.environment_id}, function (err, data) {
+        if (!err) {
+            if (data.hasOwnProperty('collections')) {
+                var collections = data.collections;
+                var learn_docs_collFound = collections.filter(function (coll) {
+                    return coll.name === discovery_conf.collection.name;
+                });
+                if (!learn_docs_collFound.length) {
+                    console.log('collection learn_docs_coll not found');
+                    var collParams = {
+                        environment_id: discovery_conf.environment.environment_id,
+                        configuration_id: discovery_conf.configuration.configuration_id,
+                        name: discovery_conf.collection.name,
+                        description: discovery_conf.collection.description,
+                        language_code: discovery_conf.collection.language_code
+                    };
+                    discovery.createCollection(collParams, function (err, data) {
+                        if (!err) {
+                            console.log('collection learn_docs_coll created');
+                            console.log(JSON.stringify(data, null, 2));
+                            discovery_conf.collection = data;
+                            seeder.run(discovery, discovery_conf, callback);
+                        } else console.error(err);
+                    });
+                } else {
+                    //console.log('collection learn_docs_coll found');
+                    discovery_conf.collection = learn_docs_collFound[0];
+                    //console.log(discovery_conf);
+                    callback();
+                }
+            } else console.log('error:', 'discovery.getCollections returned no collections');
+        } else console.log('error:', err);
+    });
+}
+
 async.series([
         //Load user to get `userId` first
         function (callback) {
-            discovery.getEnvironments(null, function (err, data) {
-                if (!err) {
-                    if (data.hasOwnProperty('environments')) {
-                        var environments = data.environments;
-                        var learn_docs_envFound = environments.filter(function (env) {
-                            return env.name === discovery_conf.environment.name;
-                        });
-                        if (!learn_docs_envFound.length) {
-                            console.log('environment learn_docs not found');
-                            discovery.createEnvironment(discovery_conf.environment,
-                                function (err, response) {
-                                    if (err)
-                                        console.log('error:', err);
-                                    else {
-                                        console.log('environment learn_docs created');
-                                        // console.log(JSON.stringify(response, null, 2));
-                                        discovery_conf.environment = response;
-                                        callback();
-                                    }
-                                });
-                        } else {
-                            discovery_conf.environment = learn_docs_envFound[0];
-                            // console.log('discovery_conf');
-                            // console.log(JSON.stringify(discovery_conf, null, 2));
-                            callback();
-                        }
-                    } else console.log('error:', 'discovery.getEnvironments returned no environments');
-                } else console.log('error:', err);
-            });
+            assureEnvironment(callback);
         },
         function (callback) {
-            discovery.getConfigurations({environment_id: discovery_conf.environment.environment_id}, function (err, data) {
-                if (!err) {
-                    if (data.hasOwnProperty('configurations')) {
-                        var configurations = data.configurations;
-                        var learn_docs_confFound = configurations.filter(function (env) {
-                            return env.name === discovery_conf.configuration.name;
-                        });
-                        if (!learn_docs_confFound.length) {
-                            console.log('configuration learn_docs_conf not found');
-                            discovery.createConfiguration({
-                                    environment_id: discovery_conf.environment.environment_id,
-                                    file: discovery_env_conf
-                                },
-                                function (err, response) {
-                                    if (err)
-                                        console.log('error:', err);
-                                    else {
-                                        console.log('configuration learn_docs_conf created');
-                                        discovery_conf.configuration = response;
-                                        // console.log(JSON.stringify(response, null, 2));
-                                        callback();
-                                    }
-                                });
-                        } else {
-                            discovery_conf.configuration = learn_docs_confFound[0];
-                            callback();
-                        }
-                    } else console.log('error:', 'discovery.getConfigurations returned no configurations');
-                } else console.log('error:', err);
-            });
+            assureConfiguration(callback);
         },
         function (callback) {
-            discovery.getCollections({environment_id: discovery_conf.environment.environment_id}, function (err, data) {
-                if (!err) {
-                    if (data.hasOwnProperty('collections')) {
-                        var collections = data.collections;
-                        var learn_docs_collFound = collections.filter(function (coll) {
-                            return coll.name === discovery_conf.collection.name;
-                        });
-                        if (!learn_docs_collFound.length) {
-                            console.log('collection learn_docs_coll not found');
-                            var collParams = {
-                                environment_id: discovery_conf.environment.environment_id,
-                                configuration_id: discovery_conf.configuration.configuration_id,
-                                name: discovery_conf.collection.name,
-                                description: discovery_conf.collection.description,
-                                language_code: discovery_conf.collection.language_code
-                            };
-                            discovery.createCollection(collParams, function (err, data) {
-                                if (!err) {
-                                    console.log('collection learn_docs_coll created');
-                                    console.log(JSON.stringify(data, null, 2));
-                                    discovery_conf.collection = data;
-                                    seeder.run(discovery, discovery_conf, callback);
-                                } else console.error(err);
-                            });
-                        } else {
-                            //console.log('collection learn_docs_coll found');
-                            discovery_conf.collection = learn_docs_collFound[0];
-                            //console.log(discovery_conf);
-                            callback();
-                        }
-                    } else console.log('error:', 'discovery.getCollections returned no collections');
-                } else console.log('error:', err);
-            });
+            assureCollection(callback);
         }
     ],
     function (err) { //This function gets called after the two tasks have called their "task callbacks"
         if (err) return next(err);
         //Here locals will be populated with `user` and `posts`
         //Just like in the previous example
-        console.log('done');
+        console.log('preparation of environment done:');
         console.log(discovery_conf);
 
     });
@@ -168,10 +183,6 @@ app.use(cors());
 app.options('*', cors()); // include before other routes
 app.use(bodyParser.json());
 
-var request = require("request");
-
-// serve the files out of ./public as our main files
-// app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
@@ -198,6 +209,7 @@ app.post('/api/query', cors(), function (req, res, next) {
     } else {
         params = req.body.query;
     }
+    params.version = !discovery._options.qs.version ? discovery._options.qs.version:'2017-09-01';
     if (!params.hasOwnProperty('passages')) {
         params.passages = 'true';
     }
@@ -207,19 +219,17 @@ app.post('/api/query', cors(), function (req, res, next) {
     if (!params.hasOwnProperty('highlight')) {
         params.highlight = 'true';
     }
-    if (!params.hasOwnProperty('version')) {
-        params.version = process.env.DISCOVERY_VERSION;
-    }
-    console.log('params----------------------------------------');
-    console.log(params);
+
     var url = "https://gateway.watsonplatform.net/discovery/api/v1/environments/" +
-        discovery_conf.environment.environment_id + "/collections/" +
-        discovery_conf.collection.collection_id + "/query";
+        discovery_conf.environment.environment_id +
+        "/collections/" + discovery_conf.collection.collection_id +
+        "/query";
 
     var options = {
         method: 'GET',
         url: url,
         qs: params,
+        json:true,
         headers: {
             'cache-control': 'no-cache',
             authorization: 'Basic ' + Buffer.from(process.env.DISCOVERY_USERNAME + ':' + process.env.DISCOVERY_PASSWORD).toString('base64')
@@ -228,8 +238,11 @@ app.post('/api/query', cors(), function (req, res, next) {
 
     request(options, function (err, response, body) {
         if (err) throw new Error(err);
-        body = JSON.parse(body);
-        res.json({data: body});
-        //console.log(body);
+
+        if (body.hasOwnProperty('error')) {
+            res.status(400).json(body);
+        } else {
+            res.json({data: body});
+        }
     });
 });

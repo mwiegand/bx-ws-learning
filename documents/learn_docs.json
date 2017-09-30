@@ -1,0 +1,837 @@
+[
+  {
+    "document_id": "d7cfa5c2-b1c7-42a1-9362-4baf46a6cdfa",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/accesstoken.html"
+  },
+  {
+    "document_id": "a584e221-6791-4705-9837-9c21921d70e6",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/action.html"
+  },
+  {
+    "document_id": "4aa6a9a7-45e2-4ba3-b2c6-d0b2429a9e83",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/adoptionitem.html"
+  },
+  {
+    "document_id": "f03089b2-54d1-4924-af84-0734a9e8b905",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/affinity.html"
+  },
+  {
+    "document_id": "d72f82c8-c367-4673-8fb0-163165bed735",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/agilesoftwaredevelopment.html"
+  },
+  {
+    "document_id": "8f7f6962-a4a2-4613-b141-f40bc7eabb5c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/alias.html"
+  },
+  {
+    "document_id": "0a9eb2c4-8840-4091-899d-155cfc623006",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/anti-affinity.html"
+  },
+  {
+    "document_id": "0713326e-4cbe-4b2f-b598-d10800634e2e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/applicationprogramminginterface(API).html"
+  },
+  {
+    "document_id": "fd378818-30bb-48b7-9ff4-1f1446a38c47",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/authentication(AuthN).html"
+  },
+  {
+    "document_id": "38fc0c5b-3087-4d19-89da-d42c3df06216",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/authorization(AuthZ).html"
+  },
+  {
+    "document_id": "ded3304c-00c2-4bc2-90d1-4ccde4132ef8",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/auto-deploy.html"
+  },
+  {
+    "document_id": "b7ea1048-64ad-48ed-ad2a-a01ff065abc9",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/availabilityzone.html"
+  },
+  {
+    "document_id": "f4c05f9e-5c20-4d62-9472-9d41f1ad00c2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/backlog.html"
+  },
+  {
+    "document_id": "2397865d-1fb7-481e-bc02-cfac663e30c0",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/betaservice.html"
+  },
+  {
+    "document_id": "7f24bc63-8512-40c5-8bba-3ec938660d72",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/bind.html"
+  },
+  {
+    "document_id": "127e04e4-b068-47e3-b1d8-b8a98242b9ad",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/BLUAcceleration.html"
+  },
+  {
+    "document_id": "40d82d02-df9f-4406-964d-4dde4d23783c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/blue-greendeployment.html"
+  },
+  {
+    "document_id": "0c7116b9-fb67-40d2-9ae8-134a4141b140",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/Bluemix.html"
+  },
+  {
+    "document_id": "e12ab12c-ff2f-4ff7-89c5-fb6dcb93e2fd",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/boilerplate.html"
+  },
+  {
+    "document_id": "2b10ab0d-d3fe-4b77-82c9-ac971f52c992",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/borderless.html"
+  },
+  {
+    "document_id": "d850e15b-6da2-429f-9608-bd8b1309010b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/branch.html"
+  },
+  {
+    "document_id": "fbe34baf-d9cc-4ae9-8d79-734c412b66bc",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/builder.html"
+  },
+  {
+    "document_id": "da870646-8d1f-4319-b319-9266854abc77",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/buildpack.html"
+  },
+  {
+    "document_id": "c11563c4-c7a9-4afb-bbf4-05146e44e3cd",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/certificateauthority(CA).html"
+  },
+  {
+    "document_id": "10e26b71-15e8-47be-ac51-85118487b929",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/certificatesigningrequest(CSR).html"
+  },
+  {
+    "document_id": "816f024f-259f-4ec4-84e4-11a3aa3a7bd4",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/changeset.html"
+  },
+  {
+    "document_id": "2e5151c7-e92d-45f8-8488-a863d1af5f56",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/client.html"
+  },
+  {
+    "document_id": "8c40deb7-980b-4224-9c3c-fe7790230067",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/cloudcomputing.html"
+  },
+  {
+    "document_id": "d849dcb5-f2d2-40dd-b88a-2dc14e37506e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/cloudportability.html"
+  },
+  {
+    "document_id": "590cd8dd-6f2a-4ce1-9050-e41ab53684b3",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/codecompletion.html"
+  },
+  {
+    "document_id": "9706bf6c-1c03-4b2a-b3b7-bdb283a9765b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/command-lineinterface(CLI).html"
+  },
+  {
+    "document_id": "f400fd2a-5b62-4fd8-b5e4-7aceb7195d90",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/commit.html"
+  },
+  {
+    "document_id": "de24c2eb-f807-4179-90d3-043cb654999f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/component.html"
+  },
+  {
+    "document_id": "f385889c-c450-436a-92f5-35dce0c4584b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/compute.html"
+  },
+  {
+    "document_id": "7a8e3d39-3d60-453f-b87f-dd3609269f4a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/container.html"
+  },
+  {
+    "document_id": "9453cbc0-aafc-4e8c-8573-3c47d67bb3f8",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/continuousdelivery(CD).html"
+  },
+  {
+    "document_id": "23ade28d-b375-4a78-b6a3-98ba36670b4b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/continuousimprovement.html"
+  },
+  {
+    "document_id": "0370a183-741c-4528-b713-4b281c8e2a8a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/continuousintegration(CI).html"
+  },
+  {
+    "document_id": "34cadf5b-22a4-4b27-9c1d-872d49926fa9",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/credential.html"
+  },
+  {
+    "document_id": "4cdf44d8-5aee-44f8-a041-debb073dda9b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/customdomain.html"
+  },
+  {
+    "document_id": "6dcc7afd-1db8-4c64-b758-911e99998d72",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/daemon.html"
+  },
+  {
+    "document_id": "b5b80499-76c8-4dc7-83e5-eb7e83f572e8",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/dashboard.html"
+  },
+  {
+    "document_id": "15ae0923-9fa9-420e-8359-085919a6c404",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/datastore.html"
+  },
+  {
+    "document_id": "094fc557-d692-473e-a422-f5b4f0bf993f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/dedicatedcloud.html"
+  },
+  {
+    "document_id": "05d8ea9c-4651-46a8-8f50-db037772d7a4",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/defect.html"
+  },
+  {
+    "document_id": "e58bf4ee-8539-43e6-9d90-d255b486b0df",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/deliverypipeline.html"
+  },
+  {
+    "document_id": "57ed6ad3-b045-4847-bf7a-e621cd28a488",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/deployment.html"
+  },
+  {
+    "document_id": "10cb5de0-5b4d-4a80-b826-a6073f08839f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/DevOps.html"
+  },
+  {
+    "document_id": "eeb79c56-565e-4a76-89ab-dd769d408c4c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/domain.html"
+  },
+  {
+    "document_id": "ae3a8e28-bdcf-41f5-9b51-8563a6e1a443",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/droplet.html"
+  },
+  {
+    "document_id": "a1f920bb-70d2-4938-a41f-2964fb6cc01a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/DropletExecutionAgent(DEA).html"
+  },
+  {
+    "document_id": "057bb810-20f4-42e1-85fc-10e4ab6bd180",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/Eclipse.html"
+  },
+  {
+    "document_id": "b92f8b7f-bf22-4057-9aa3-a507fb06c66f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/endpoint.html"
+  },
+  {
+    "document_id": "8d7f1e5d-72d9-482a-9ce4-30e1796290ce",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/epic.html"
+  },
+  {
+    "document_id": "6eea4668-e97b-4fdc-b52a-d53a9c5609c5",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/experimentalservice.html"
+  },
+  {
+    "document_id": "00442069-6b5f-47f0-a397-9cf38964b442",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/federate.html"
+  },
+  {
+    "document_id": "45d29739-30a1-42e1-8fc2-beb96ddf5b36",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/feed.html"
+  },
+  {
+    "document_id": "695568e4-3480-4689-82ee-8c6d2fb42062",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/fileshare.html"
+  },
+  {
+    "document_id": "6297dac4-bab5-43e9-97f8-bca6b6749836",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/fire.html"
+  },
+  {
+    "document_id": "3063849d-13b9-45ef-ae6a-ae3b6351e508",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/fork.html"
+  },
+  {
+    "document_id": "78f0f5a0-3fbe-45ac-a3e9-908ef7b2424e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/framework.html"
+  },
+  {
+    "document_id": "ef5f486f-db21-437b-9b39-43e58e2252e4",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/gate.html"
+  },
+  {
+    "document_id": "110fa7c2-204c-4951-8c42-c0c6b576a89b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/GB-hour.html"
+  },
+  {
+    "document_id": "d1b33896-4f6a-43e0-a925-b6fdcd064ff7",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/Git.html"
+  },
+  {
+    "document_id": "c0a78c3e-9031-4f83-982b-479bd667d1f5",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/globallyuniqueidentifier(GUID).html"
+  },
+  {
+    "document_id": "e81c7b13-9cab-48fc-9c0c-ad7b30732d8e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/heavyAPIcall.html"
+  },
+  {
+    "document_id": "3914f95c-3200-4236-9c26-b238e4131a27",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/highavailability(HA).html"
+  },
+  {
+    "document_id": "176c0c69-91e1-420c-a8c3-4c3c04118b3d",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/host.html"
+  },
+  {
+    "document_id": "d88a5ba2-6de2-4fb4-b842-215629b33ab1",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/HTTPmethod.html"
+  },
+  {
+    "document_id": "4247b393-a6ed-447b-af1a-a375b8c8f48e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/hybridcloud.html"
+  },
+  {
+    "document_id": "ed6508f3-3e93-4efb-9270-240e3bbca0b6",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/HypertextTransferProtocolSecure(HTTPS).html"
+  },
+  {
+    "document_id": "99c1e870-aff9-4ee1-9f6e-5a0856ff084b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/image.html"
+  },
+  {
+    "document_id": "eb2f9095-4569-44f8-9996-7914ff62cb82",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/impediment.html"
+  },
+  {
+    "document_id": "7589ff52-347d-4a78-9ff9-f29857b38a8d",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/infrastructureasaservice(IaaS).html"
+  },
+  {
+    "document_id": "e3bcaa95-bd04-4949-aac9-7f600c17e639",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/instance.html"
+  },
+  {
+    "document_id": "1bf6fb04-1085-4037-b155-2f4b2412cd86",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/integrateddevelopmentenvironment(IDE).html"
+  },
+  {
+    "document_id": "50a7f21c-9fff-4e83-bfcc-49ec10dcf27e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/integration.html"
+  },
+  {
+    "document_id": "b56b0619-6458-4ef4-a4f0-be9cf333ab77",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/intermediatecertificate.html"
+  },
+  {
+    "document_id": "1d2b9aa7-6b0b-4167-9077-dba6d4717f0e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/InternetofThings(IoT).html"
+  },
+  {
+    "document_id": "05884777-45cc-42e8-afdc-87c09b9aa063",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/invoke.html"
+  },
+  {
+    "document_id": "4873f5e4-6fff-4727-824a-371739083bc1",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/JARfile.html"
+  },
+  {
+    "document_id": "14221051-7ed1-4f63-a9c7-893ef421bb07",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/JavaScriptObjectNotation(JSON).html"
+  },
+  {
+    "document_id": "c0758587-a0ce-4b5c-bfe3-c954a2663108",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/layer.html"
+  },
+  {
+    "document_id": "26ec2ea1-35f7-498f-bf5b-e72f5866472f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/lightAPIcall.html"
+  },
+  {
+    "document_id": "17a95f48-a4ca-4d6c-b4e9-e8a4540b80ea",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/LightweightDirectoryAccessProtocol(LDAP).html"
+  },
+  {
+    "document_id": "f09cef45-35c9-4965-8133-cebaedf4e2ec",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/localcloud.html"
+  },
+  {
+    "document_id": "822bf586-e6c3-44ac-beb1-42e95b8d7753",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/manifestfile.html"
+  },
+  {
+    "document_id": "f05f94eb-28c8-426e-8d9a-7f6181c7b56e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/merge.html"
+  },
+  {
+    "document_id": "a00eec1f-51f3-46c4-a661-029148b4096a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/microservice.html"
+  },
+  {
+    "document_id": "84f0ae12-e073-440d-bc96-cd4bd36afbe9",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/milestone.html"
+  },
+  {
+    "document_id": "282519a8-4711-4377-a1d7-032cdee33cb3",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/mobileapplication(mobileapp).html"
+  },
+  {
+    "document_id": "f32e99df-59fe-45e3-8e4d-80b2a4ee7dce",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/mobilebackendasaservice(MBaaS).html"
+  },
+  {
+    "document_id": "95a4ddae-08d2-4888-97cc-038fb1955e9e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/mobilecloud.html"
+  },
+  {
+    "document_id": "225211e8-1f30-42a8-a2cb-9de22e3695b2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/namespace.html"
+  },
+  {
+    "document_id": "d4baf6c2-5eee-4924-b0b9-e3c79cdf9046",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/OAuth.html"
+  },
+  {
+    "document_id": "55b05ec7-a5f0-4976-9da9-a259f82c7b4a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/on-premises(on-prem).html"
+  },
+  {
+    "document_id": "5a941b8f-4f17-46c4-984e-85b62ec5205c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/opensource.html"
+  },
+  {
+    "document_id": "9f40ca82-1512-422c-b5d6-d65c421524d2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/organization(org).html"
+  },
+  {
+    "document_id": "139ad7a7-e4ae-45ad-aed7-a248eb40e081",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/parentimage.html"
+  },
+  {
+    "document_id": "44d41b88-39e0-4365-becc-73e5d4e0e41a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/platformasaservice(PaaS).html"
+  },
+  {
+    "document_id": "eea2009e-a514-40d1-be8e-ff9b62251fdc",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/policy.html"
+  },
+  {
+    "document_id": "acd463fd-7f7c-4a94-b583-7e614f79f404",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/priority.html"
+  },
+  {
+    "document_id": "7d31638c-2416-46b0-9144-6eef2eedd489",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/privatecloud.html"
+  },
+  {
+    "document_id": "f4e69f86-b55c-4869-8040-d2e1b08f6324",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/privateimagerepository.html"
+  },
+  {
+    "document_id": "f1ebee0f-eed4-435e-a8f6-4b85bb400cf2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/privatekey.html"
+  },
+  {
+    "document_id": "32acaa87-3645-4905-8104-4ddbe8351ec7",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/privateservice.html"
+  },
+  {
+    "document_id": "66b7f58b-29f8-44dc-b76a-39a7df72986c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/project.html"
+  },
+  {
+    "document_id": "6bd71c3d-5026-4490-8e10-21e400cc43ff",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/publiccloud.html"
+  },
+  {
+    "document_id": "a7d7ed25-92f7-4bbe-bc51-351e31484cb0",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/push.html"
+  },
+  {
+    "document_id": "a14e7946-418f-418d-8f09-130329edf3f7",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/pushnotification.html"
+  },
+  {
+    "document_id": "e5a178fc-ae08-4b41-b9a9-edf1772f9870",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/read-mostly.html"
+  },
+  {
+    "document_id": "8daec0c1-90d7-4b34-a1c5-f5eed75d179a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/red-blackdeployment.html"
+  },
+  {
+    "document_id": "92eb901b-e41d-4c97-9253-5434f25c2d31",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/region.html"
+  },
+  {
+    "document_id": "d26b666c-45f4-4209-9adb-81c8b8da0105",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/registry.html"
+  },
+  {
+    "document_id": "0769d229-9d00-47d9-9351-4a48a0ba4e4b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/repository(repo).html"
+  },
+  {
+    "document_id": "074bbbf3-20f9-438f-9899-66b7d8bcc06f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/repositoryworkspace.html"
+  },
+  {
+    "document_id": "85efb6ab-3202-487a-9463-3a5006c427df",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/RepresentationalStateTransfer(REST).html"
+  },
+  {
+    "document_id": "32cf715c-4c58-4be0-813f-c34e24d4837c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/resource.html"
+  },
+  {
+    "document_id": "b1f8b37e-8a6b-4797-a9dd-930a7924145f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/retrospective.html"
+  },
+  {
+    "document_id": "ffc02daf-29e8-4119-b0c0-7041afa42ff5",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/route.html"
+  },
+  {
+    "document_id": "fffacbb0-b90a-4ae3-b86b-b0e3bb7eef80",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/rule.html"
+  },
+  {
+    "document_id": "141342c8-57c6-450a-833f-db2420fc5d22",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/runbook.html"
+  },
+  {
+    "document_id": "08e0dcce-4f37-4fd9-92a2-b1e9e84159e5",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/runtime.html"
+  },
+  {
+    "document_id": "db1a906f-030c-4416-b160-13361d283423",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/runtimeenvironment.html"
+  },
+  {
+    "document_id": "fb320b03-98bb-4f57-b52a-7368f57cccbf",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/scale.html"
+  },
+  {
+    "document_id": "7c1d81f2-661d-4b92-9f09-7188e917914a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/scope.html"
+  },
+  {
+    "document_id": "ce56d971-05f4-4f14-98d5-8f035fa5b4d8",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/Scrum.html"
+  },
+  {
+    "document_id": "8dc979da-f188-45ac-a34e-a806aa44d99e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/SecureSocketsLayer(SSL).html"
+  },
+  {
+    "document_id": "8e40a1e7-1e01-4871-a40e-513ab124dede",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/service.html"
+  },
+  {
+    "document_id": "c74c02d2-1335-4941-b406-819a1feb5612",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/session.html"
+  },
+  {
+    "document_id": "9b57b18f-9347-4ba0-a11f-bdc709aa6841",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/severity.html"
+  },
+  {
+    "document_id": "8a2758fa-749f-4ba6-8906-17742fe11c26",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/singlesign-on(SSO).html"
+  },
+  {
+    "document_id": "9dd4103a-8b21-41a6-aaeb-f0000b164c39",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/softwareasaservice(SaaS).html"
+  },
+  {
+    "document_id": "04be3b94-42d1-4d08-bbb0-956a9e77f4b9",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/sourcecontrolmanagement(SCM).html"
+  },
+  {
+    "document_id": "de0e0fbe-30d3-4a1d-aefc-45ce52c638a3",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/space.html"
+  },
+  {
+    "document_id": "fab09d5b-5396-44ca-8ddc-7c7793bf537d",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/sprint.html"
+  },
+  {
+    "document_id": "e75ccf6a-0309-4539-8f68-3f125e8af775",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/stage.html"
+  },
+  {
+    "document_id": "8b1d0dd0-d873-4402-b1a0-727393db622f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/stanza.html"
+  },
+  {
+    "document_id": "b60a298a-bf5a-4471-9aab-485ecaaf1cb0",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/starter.html"
+  },
+  {
+    "document_id": "d3841184-7b45-4495-923b-be7272e94fb6",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/story.html"
+  },
+  {
+    "document_id": "b968b7d3-f3ac-46bc-bab9-f7cb4cb8ee3e",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/subdomain.html"
+  },
+  {
+    "document_id": "66ef6ced-a6eb-4d85-a462-f51b56e64eb3",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/syntaxchecking.html"
+  },
+  {
+    "document_id": "16ff15ed-3718-4609-bfa6-af7c9ea13068",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/systemofengagement.html"
+  },
+  {
+    "document_id": "6c67b94e-c0be-4b2d-8c34-067eada14ba1",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/systemofrecord(SOR).html"
+  },
+  {
+    "document_id": "b487e575-02ec-42e0-b88a-c91f27f82503",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/task.html"
+  },
+  {
+    "document_id": "1e2abde2-fc85-49a4-ba88-1466fc8ab8fe",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/template.html"
+  },
+  {
+    "document_id": "da9e58e2-9c7f-48b5-a15e-d36469a5a71a",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/testcase(TC).html"
+  },
+  {
+    "document_id": "75af9586-715f-405f-9c82-9906385e8dcb",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/third-party.html"
+  },
+  {
+    "document_id": "b7b48e90-2825-4df6-abfb-51ee1ec0a761",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/tile.html"
+  },
+  {
+    "document_id": "bc6607d1-32e8-4f46-bfd2-0da4bd189f5f",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/timeline.html"
+  },
+  {
+    "document_id": "bd2cdc5b-8bd1-46e8-890e-7436fcd0e7d6",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/toolchain.html"
+  },
+  {
+    "document_id": "6c936616-0ca3-4b2c-812b-783bcadd4a13",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/toolintegration.html"
+  },
+  {
+    "document_id": "0d9c445b-28ce-4734-af82-21554b7a1e2c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/trackbuilditem.html"
+  },
+  {
+    "document_id": "90f4e2bf-acf1-4ba6-b523-9caf6571ef36",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/trigger.html"
+  },
+  {
+    "document_id": "e8e09702-c865-40d2-a586-0f74082a3bc2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/trustedroot.html"
+  },
+  {
+    "document_id": "a089f94a-3f70-4145-8035-cb2fcd377e56",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/UniformResourceIdentifier(URI).html"
+  },
+  {
+    "document_id": "7bf21fb8-cc08-4b75-acd9-c0cfe3fc3e7c",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/UniformResourceLocator(URL).html"
+  },
+  {
+    "document_id": "a3a16105-a198-4d5e-abe7-26a1d414a1a9",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/virtual.html"
+  },
+  {
+    "document_id": "f5d3d839-8c10-404d-be27-7b60a186cb45",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/virtualmachine(VM).html"
+  },
+  {
+    "document_id": "4ebb69c5-3796-4345-8dc2-5797bdbe7af2",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/virtualprivatenetwork(VPN).html"
+  },
+  {
+    "document_id": "be64cfd8-7d81-4873-a871-5edd45015bc6",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/virtualserver.html"
+  },
+  {
+    "document_id": "82e26afe-6e64-4618-9d3c-6324a9fc65e8",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/webapplication(webapp).html"
+  },
+  {
+    "document_id": "91a96202-9063-4f36-9662-3f43d7e429cd",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/webarchive(WAR).html"
+  },
+  {
+    "document_id": "53b04e25-0e37-4ae7-998f-c841fe76b443",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/webhook.html"
+  },
+  {
+    "document_id": "b4b55090-bbf4-4316-918d-938bb320b7bf",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/WebIDE.html"
+  },
+  {
+    "document_id": "cfbebea6-0ba7-41cf-bfb5-93136b3f501b",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/workitem.html"
+  },
+  {
+    "document_id": "7bca0935-3823-47ce-8641-14ae5ec2af24",
+    "status": "processing",
+    "filename": "documents/src/bluemix-glossary/workspace.html"
+  }
+]
