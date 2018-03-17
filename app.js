@@ -32,7 +32,7 @@ var discovery = new DiscoveryV1({
     // After that, the SDK will fall back to the bluemix-provided VCAP_SERVICES environment property
     username: process.env.DISCOVERY_USERNAME,
     password: process.env.DISCOVERY_PASSWORD,
-    version_date: process.env.DISCOVERY_VERSION
+    version_date: '2017-08-01'
 });
 if(process.env.hasOwnProperty('DISCOVERY_URL')) {
     if (process.env.DISCOVERY_URL) {
