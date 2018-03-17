@@ -25,26 +25,11 @@ stages:
   triggers:
   - type: stage
   properties:
-  - name: CF_INSTANCES
-    value: '1'
-    type: text
-  - name: CF_MEMORY
-    value: 128M
-    type: text
   - name: DISCOVERY_SERVICE_NAME
     value: Discovery-bx-learning
     type: text
-  - name: TEMP_APP_NAME
-    value: ''
-    type: text
-  - name: TEMP_APP_URL
-    value: ''
-    type: text
-  - name: ROUTE_DOMAIN
-    value: mybluemix.net
-    type: text
   jobs:
-  - name: Deploy Dark
+  - name: Deploy
     type: deployer
     target:
       region_id: ${PROD_REGION_ID}
@@ -61,79 +46,9 @@ stages:
       if ! cf service ${DISCOVERY_SERVICE_NAME} ; then
         cf create-service discovery lite ${DISCOVERY_SERVICE_NAME}
       fi
+      
+      cf push "${CF_APP}"
 
-      # Compute a unique app name using the reserved CF_APP name (configured in the
-      # deployer or from the manifest.yml file) and the build number
-
-      export TEMP_APP_NAME="${CF_APP}-${BUILD_NUMBER}"
-
-      # write out manifest.yml
-      echo "Writing manifest.yml..."
-
-      cat > ./manifest.yml <<EOL
-      name: ${TEMP_APP_NAME}
-      instances: ${CF_INSTANCES}
-      memory: ${CF_MEMORY}
-      command: npm start
-      services:
-        - ${DISCOVERY_SERVICE_NAME}
-
-      EOL
-
-      echo "Manifest file written"
-
-      cat ./manifest.yml
-
-      echo "Pushing new app:$TEMP_APP_NAME"
-      cf push $TEMP_APP_NAME
-      export TEMP_APP_URL="https://${TEMP_APP_NAME}.${ROUTE_DOMAIN}"
-
-      echo "##############################################################"
-      echo "Deployed new app $TEMP_APP_NAME"
-      echo "on temporary route: $TEMP_APP_URL"
-      echo "##############################################################"
-
-      # View logs
-      #cf logs "${TEMP_APP_NAME}" --recent
-  - name: Rollout
-    type: deployer
-    target:
-      region_id: ${PROD_REGION_ID}
-      organization: ${PROD_ORG_NAME}
-      space: ${PROD_SPACE_NAME}
-      application: ${CF_APP_NAME}
-    script: |-
-      #!/bin/bash
-      #set -x
-      #CF_TRACE=true
-
-      cf app $TEMP_APP_NAME
-
-      # Map traffic to the new version by binding to the public host.
-      # NOTE: The old version(s) is still taking traffic to avoid disruption in service.
-      cf map-route $TEMP_APP_NAME $ROUTE_DOMAIN --hostname $CF_APP
-      cf routes | { grep $TEMP_APP_NAME || true; }
-
-      # Delete the temporary route that was used for testing since it is no longer needed.
-      cf unmap-route $TEMP_APP_NAME $ROUTE_DOMAIN -n $TEMP_APP_NAME
-      cf delete-route $ROUTE_DOMAIN -n $TEMP_APP_NAME -f
-
-      # Delete the old app at this point. They are no longer needed.
-      cf delete -f $CF_APP
-
-      # Rename temp app now it is public
-      cf rename $TEMP_APP_NAME $CF_APP
-
-      echo "Public route bindings:"
-      cf routes | { grep $CF_APP || true; }
-      cf app $CF_APP
-      export APP_URL=https://$(cf app $CF_APP | grep urls: | awk '{print $2}')
-      echo "##############################################################"
-      echo "You have successfully executed a rolling deployment of $CF_APP"
-      echo "at: $APP_URL"
-      echo "##############################################################"
-      # View logs
-      #cf logs "${CF_APP}" --recent
 hooks:
 - enabled: true
   label: null
